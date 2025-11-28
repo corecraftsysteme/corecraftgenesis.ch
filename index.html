@@ -7,56 +7,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0b0b0b;
-      --card: #101214;
-      --accent: #00ffcc;
-      --cta: #f1641e;
-      --muted: #bfc7c9;
-      --maxw: 900px;
+      --accent: #00aaff;
+      --muted: #ccc;
     }
-    html, body {
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0f1113;
+      color: #eee;
       margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: #e6eef0;
-      font-family: Inter, system-ui, sans-serif;
-      line-height: 1.6;
+      padding: 2rem;
     }
-    .container {
-      max-width: var(--maxw);
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    header h1 {
-      font-family: "Orbitron", sans-serif;
+    h1, h2 {
       color: var(--accent);
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
     }
-    .meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    section {
-      background: var(--card);
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-    ul {
-      margin-left: 1.2rem;
-      color: var(--muted);
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      background: var(--cta);
-      color: white;
+    a {
+      color: var(--accent);
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     .box {
       background: #181a1c;
@@ -70,70 +39,63 @@
       margin-top: 3rem;
       text-align: center;
       color: var(--muted);
-      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>🧾 CoreCraft Genesis – Firmenprofil</h1>
-      <p class="meta">Technologie trifft Mythos: Auditierbare Infrastruktur mit narrativer Tiefe.</p>
-    </header>
+  <header>
+    <h1>CoreCraft Genesis</h1>
+    <p>Firmenprofil & Genesis-Artefakte</p>
+  </header>
 
-    <section>
-      <h2>Wer wir sind</h2>
-      <p>CoreCraft Genesis ist ein Schweizer Technologieunternehmen, das technische Präzision mit narrativer Tiefe verbindet. Wir entwickeln eine audit-sealed Infrastruktur, die sowohl funktional als auch symbolisch ist.</p>
-    </section>
+  <section>
+    <h2>Unsere Mission</h2>
+    <p>Wir dokumentieren, verlinken und präsentieren digitale Artefakte, technische Ursprünge und narrative Echos – modular, auditierbar und mythisch.</p>
+  </section>
 
-    <section>
-      <h2>Unsere Mission</h2>
-      <p>Wir dokumentieren, verlinken und präsentieren digitale Artefakte, technische Ursprünge und narrative Echos – modular, auditierbar und mythisch.</p>
-    </section>
+  <section>
+    <h2>🔷 Genesis-Artefakt: Ikosaeder</h2>
+    <p>Der Ikosaeder ist ein platonischer Körper mit 20 gleichseitigen Dreiecken – ein Symbol für Äther, Resonanz und geometrische Reinheit.</p>
+    <div class="box">
+      <strong>Echo: Äther-Ikosaeder</strong><br />
+      Dieses Artefakt dient als visuelle und symbolische Verankerung des Äther-Moduls.<br />
+      FLOPS-Telemetrie: 1500 FLOPS pro Fläche<br />
+      NFT-Trigger: Aktivierung aller 20 Flächen<br />
+      Lizenz: Apache 2.0 mit Genesis-Signatur
+    </div>
+  </section>
 
-    <section>
-      <h2>🔷 Genesis-Artefakt: Ikosaeder</h2>
-      <p>Der Ikosaeder ist ein platonischer Körper mit 20 gleichseitigen Dreiecken – ein Symbol für Äther, Resonanz und geometrische Reinheit.</p>
-      <div class="box">
-        <strong>Echo: Äther-Ikosaeder</strong><br />
-        Dieses Artefakt dient als visuelle und symbolische Verankerung des Äther-Moduls.<br />
-        FLOPS-Telemetrie: 1500 FLOPS pro Fläche<br />
-        NFT-Trigger: Aktivierung aller 20 Flächen<br />
-        Lizenz: Apache 2.0 mit Genesis-Signatur
-      </div>
-    </section>
+  <section>
+    <h2>🔑 Genesis-Elemente</h2>
+    <ul>
+      <li><strong>Genesis-Echo:</strong> <a href="https://satoshi.corecraftgenesis.ch" target="_blank">satoshi.corecraftgenesis.ch</a></li>
+      <li><strong>Genesis-Node:</strong> <a href="https://node.corecraftgenesis.ch" target="_blank">node.corecraftgenesis.ch</a></li>
+      <li><strong>Forschungs-Chain:</strong> <a href="https://chain2025.corecraftgenesis.ch" target="_blank">chain2025.corecraftgenesis.ch</a></li>
+      <li><strong>DNSSeed-Echo:</strong> <a href="https://dnsseed.corecraftgenesis.ch" target="_blank">dnsseed.corecraftgenesis.ch</a></li>
+      <li><strong>Manifest-Datei:</strong> <a href="https://manifest.corecraftgenesis.ch" target="_blank">manifest.corecraftgenesis.ch</a></li>
+      <li><strong>📄 Snapshot:</strong> <a href="dnsseed-scan-2025-10-14.txt" target="_blank">dnsseed-scan-2025-10-14.txt</a></li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>🔑 Genesis-Elemente</h2>
-      <ul>
-        <li><strong>Genesis-Echo:</strong> <a href="https://satoshi.corecraftgenesis.ch" target="_blank">satoshi.corecraftgenesis.ch</a></li>
-        <li><strong>Genesis-Node:</strong> <a href="https://node.corecraftgenesis.ch" target="_blank">node.corecraftgenesis.ch</a></li>
-        <li><strong>Forschungs-Chain:</strong> <a href="https://chain2025.corecraftgenesis.ch" target="_blank">chain2025.corecraftgenesis.ch</a></li>
-        <li><strong>DNSSeed-Echo:</strong> <a href="https://dnsseed.corecraftgenesis.ch" target="_blank">dnsseed.corecraftgenesis.ch</a></li>
-        <li><strong>Manifest-Datei:</strong> <a href="https://manifest.corecraftgenesis.ch" target="_blank">manifest.corecraftgenesis.ch</a></li>
-        <li><strong>📄 Snapshot:</strong> <code>dnsseed-scan-2025-10-14.txt</code></li>
-      </ul>
-    </section>
+  <section>
+    <h2>⚙️ Leistungen</h2>
+    <ul>
+      <li><strong>Webhosting & Infrastruktur:</strong> Stabile Hosting-Lösungen, Domain-Setup – Kunden müssen sich nicht um Technik kümmern.</li>
+      <li><strong>Individuelle Anwendungen:</strong> Tools & Dashboards für Chain-Management, Reporting, Automatisierung – maßgeschneidert statt Standardsoftware.</li>
+      <li><strong>Blog & Wissensplattform:</strong> Fachartikel, Tutorials, Updates – Positionierung als Experte und Vertrauensaufbau.</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>⚙️ Leistungen</h2>
-      <ul>
-        <li><strong>Webhosting & Infrastruktur:</strong> Stabile Hosting-Lösungen, Domain-Setup</li>
-        <li><strong>Individuelle Anwendungen:</strong> Tools & Dashboards für Chain-Management</li>
-        <li><strong>Blog & Wissensplattform:</strong> Fachartikel, Tutorials, Updates</li>
-      </ul>
-    </section>
+  <section>
+    <h2>📞 Kontakt</h2>
+    <p><strong>Autor & Architekt:</strong> Daniel Aecherli – Genesis-Architekt, Validator, Mythic Founder</p>
+    <p>Verantwortlich für narrative Tiefe, audit-sealed Artefakte und symbolische Infrastruktur.</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:contact@corecraftgenesis.ch">contact@corecraftgenesis.ch</a><br />
+       <strong>Adresse:</strong> Ottikon bei Kemptthal, Schweiz</p>
+  </section>
 
-    <section>
-      <h2>📞 Kontakt</h2>
-      <p><strong>Autor & Architekt:</strong> Daniel Aecherli – Genesis-Architekt, Validator, Mythic Founder</p>
-      <p><strong>E-Mail:</strong> <a href="mailto:contact@corecraftgenesis.ch">contact@corecraftgenesis.ch</a><br />
-         <strong>Adresse:</strong> Ottikon bei Kemptthal, Schweiz</p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 CoreCraft Genesis – Eine Initiative von Daniel Aecherli</p>
-    </footer>
-  </div>
+  <footer>
+    <p>© 2025 CoreCraft Genesis – Alle Rechte vorbehalten</p>
+  </footer>
 </body>
 </html>
