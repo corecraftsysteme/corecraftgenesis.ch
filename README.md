@@ -1,76 +1,124 @@
-## 🌐 CoreCraft Genesis – Audit-Sealed Infrastruktur
+# 🌐 CoreCraft Genesis – Technologie-Index & Audit-Sealed Architektur
 
-Willkommen im Repository der **CoreCraft Genesis**-Infrastruktur.  
-Dieses Projekt dokumentiert, verlinkt und präsentiert symbolische Artefakte, technische Ursprünge und narrative Echos – modular, auditierbar und mythisch.
+Willkommen im offiziellen Repository von **CoreCraft Genesis**.  
+Diese Domain bildet die aktive technische Oberfläche für die modulare Architektur von **EngineCore**, **Interchain**, **Runtime**, **Symbolischer KI**, **WireNet**, **Zenoh**, **Chain2025**, **Bifröst**, **Atlantis** und dem **Orbital District**.
 
----
-
-## 📘 Genesis-Echo: *Die Gedanken von Satoshi Nakamoto*
-
-Ein audit-sealed Buch, das die ideologischen Ursprünge von Bitcoin dokumentiert.  
-Verfasst von **Daniel Aecherli**, basierend auf Primärzitaten von Satoshi Nakamoto.
-
-🔗 [Jetzt auf Amazon ansehen](https://www.amazon.de/dp/B0FJ6C3FY7)
+CoreCraft Genesis dient als:
+- Technologie-Index  
+- Dokumentationsplattform  
+- OEM-Einstiegspunkt  
+- Symbolische Infrastruktur  
+- Audit-Sealed Artefakt-Archiv  
 
 ---
 
-## 🧱 Bedeutung der Genesis-Node
+## 🧩 Technologie-Layer
 
-Diese Node ist kein gewöhnlicher Server.  
-Sie ist ein physischer und symbolischer Anker für die CoreCraft Genesis-Infrastruktur.
+Die Website unter **https://corecraftgenesis.ch** präsentiert die gesamte modulare Architektur:
 
-- **Genesis-Verbindung:** Validiert Ursprung, verknüpft Wallet-Zines, DNSSeed-Echos und Chain-Artefakte  
-- **Auditierbare Tiefe:** Jede Konfiguration, jeder Scan, jede IP ist dokumentiert  
-- **Mythische Funktion:** Teil eines Rituals – betrieben ohne Hostingplan, getragen von Bedeutung  
-- **Hardware als Artefakt:** Modular aufgebaut, bewusst gewählt, audit-sealed beschrieben
-
----
-
-## 🖼️ Genesis-Poster – Etsy-Artefakte
-
-### 🎨 Künstlerische Darstellung  
-Ein visuelles Echo des Genesis-Moments – audit-sealed, symbolisch, physisch erhältlich  
-🔗 [Jetzt auf Etsy ansehen](https://www.etsy.com/listing/4386915848/poster-genesis-an-artistic-depictio)
-
-### 🌀 Stylisierte Visualisierung  
-Stilisierte Darstellung des Genesis-Moments – audit-sealed, physisch erhältlich  
-🔗 [Jetzt auf Etsy ansehen](https://www.etsy.com/listing/4386931049/poster-genesis-a-stylized-visual-re)
-
----
-
-## 🧬 DNSSeed-Echo
-
-Ein auditierbarer DNSSeed-Scan zur Validierung der Genesis-Infrastruktur  
-🔗 `dnsseed.corecraftgenesis.ch`  
-📄 Snapshot: `dnsseed-scan-2025-10-14.txt`
-
----
-
-## 🗂️ Manifest-Datei
-
-Alle Artefakte sind in `manifest.xml` dokumentiert – audit-sealed, versionierbar, modular.  
-Sie enthält Buch, Node, Poster und DNSSeed-Echo als symbolische Einträge.
-
----
-
-## 🛠️ Struktur & Erweiterung
-
-```plaintext
-/corecraftgenesis-site/
-├── index.html
-├── README.md
-├── manifest.xml
-├── poster-genesis-1.png
-├── poster-genesis-2.png
-├── dnsseed-scan-2025-10-14.txt
-├── CNAME
-├── .nojekyll
 ```
+/enginecore
+/interchain
+/runtime
+/symbolic-ai
+/wirenet
+/zenoh
+/chain2025
+/bifrost
+/atlantis
+/orbital
+```
+
+Jeder Layer besitzt eine eigene `index.html` und bildet einen klar abgegrenzten Teil der CoreCraft-Architektur.
+
+---
+
+## 🛠️ Repository-Struktur
+
+```
+corecraftgenesis.ch/
+│
+├── index.html                # Startseite (Technologie-Index)
+├── styles.css                # Zentrales Stylesheet
+├── CNAME                     # Domain: corecraftgenesis.ch
+├── .nojekyll                 # Deaktiviert Jekyll für reine HTML-Auslieferung
+│
+├── enginecore/
+│   └── index.html
+├── interchain/
+│   └── index.html
+├── runtime/
+│   └── index.html
+├── symbolic-ai/
+│   └── index.html
+├── wirenet/
+│   └── index.html
+├── zenoh/
+│   └── index.html
+├── chain2025/
+│   └── index.html
+├── bifrost/
+│   └── index.html
+├── atlantis/
+│   └── index.html
+└── orbital/
+    └── index.html
+```
+
+Diese Struktur ist vollständig **GitHub-Pages-kompatibel** und ermöglicht saubere URLs ohne `.html`.
+
+---
+
+## 🧬 Audit-Sealed Artefakte
+
+Dieses Repository enthält zusätzlich symbolische und technische Artefakte:
+
+- `manifest.xml` – zentrale Dokumentation aller Artefakte  
+- `dnsseed-scan-2025-10-14.txt` – auditierbarer DNSSeed-Snapshot  
+- Poster- und Visualisierungsdateien (Genesis-Echos)  
+- Dokumentierte Ursprünge und narrative Elemente  
+
+Alle Artefakte sind modular, versionierbar und audit-tauglich abgelegt.
+
+---
+
+## 🧱 Genesis-Node (Symbolische Infrastruktur)
+
+Die Genesis-Node fungiert als physischer und symbolischer Ankerpunkt der CoreCraft-Architektur:
+
+- Validiert Ursprung  
+- Verknüpft DNSSeed-Echos  
+- Dokumentiert Konfigurationen und Scans  
+- Dient als mythisch-technische Grundlage der Infrastruktur  
 
 ---
 
 ## ✍️ Autor
 
 **Daniel Aecherli**  
-Genesis-Architekt, Validator, Mythic Founder  
-Verantwortlich für narrative Tiefe, audit-sealed Artefakte und symbolische Infrastruktur
+Architekt der CoreCraft-Architektur  
+Verantwortlich für technische Tiefe, narrative Struktur und audit-sealed Infrastruktur
+
+---
+
+## 📜 Lizenz
+
+Dieses Repository enthält **keine Software**, sondern dokumentarische, symbolische und architektonische Artefakte.  
+Die Nutzung der Architektur erfolgt ausschließlich über **Lizenzmodelle** der AES Technologies Aecherli.
+```
+
+---
+
+# ⭐ Bereit für den Commit
+
+Du kannst diesen Text **sofort** in dein README.md einfügen.
+
+Wenn du willst, mache ich dir jetzt:
+
+### ✔ eine englische Version  
+### ✔ eine minimalistische Version  
+### ✔ eine Version mit Branding‑Badges  
+### ✔ eine Version mit Links zu allen Unterseiten  
+### ✔ eine Version mit automatischer Navigation  
+
+Sag einfach, welche Variante du möchtest.
