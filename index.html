@@ -1,314 +1,113 @@
-```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <title>CoreCraft Genesis – Firmenprofil & Genesis-Artefakte</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <title>CoreCraft Genesis – EngineCore & Technologie-Architektur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    :root {
-      --bg: #050711;
-      --bg-alt: #0b0f1c;
-      --accent: #3aa9ff;
-      --accent-soft: #19324a;
-      --text: #f5f7ff;
-      --muted: #a5afc7;
-      --border: #22283a;
-      --highlight: #ffd66b;
-      --danger: #ff6b6b;
-      --mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: var(--sans);
-      background: radial-gradient(circle at top, #11172a 0, #050711 55%, #02030a 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    .page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2.5rem 1.5rem 3.5rem;
-    }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.2rem 0.7rem;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: rgba(58, 169, 255, 0.12);
-      color: var(--accent);
-      border: 1px solid rgba(58, 169, 255, 0.4);
-    }
-    h1 {
-      margin: 0.8rem 0 0.3rem;
-      font-size: 2rem;
-      letter-spacing: 0.03em;
-    }
-    h2 {
-      margin: 2.2rem 0 0.8rem;
-      font-size: 1.3rem;
-      letter-spacing: 0.03em;
-    }
-    h3 {
-      margin: 1.4rem 0 0.4rem;
-      font-size: 1.05rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    p {
-      margin: 0.3rem 0 0.6rem;
-      color: var(--muted);
-    }
-    .lead {
-      margin-top: 0.8rem;
-      max-width: 46rem;
-      font-size: 0.98rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      gap: 1.5rem;
-      margin-top: 1.2rem;
-    }
-    .card {
-      background: linear-gradient(145deg, rgba(11, 15, 28, 0.96), rgba(5, 7, 17, 0.98));
-      border-radius: 0.9rem;
-      border: 1px solid var(--border);
-      padding: 1.1rem 1.2rem;
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
-    }
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 0.5rem;
-      margin-bottom: 0.6rem;
-    }
-    .card-title {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-    .pill {
-      font-size: 0.75rem;
-      padding: 0.1rem 0.55rem;
-      border-radius: 999px;
-      border: 1px solid var(--accent-soft);
-      color: var(--muted);
-      background: rgba(9, 16, 32, 0.9);
-    }
-    .list {
-      list-style: none;
-      padding: 0;
-      margin: 0.2rem 0 0;
-      font-size: 0.9rem;
-    }
-    .list li {
-      margin: 0.15rem 0;
-      display: flex;
-      gap: 0.4rem;
-    }
-    .list li span.key {
-      min-width: 7.5rem;
-      color: var(--text);
-      font-weight: 500;
-    }
-    .mono {
-      font-family: var(--mono);
-      font-size: 0.85rem;
-      color: var(--muted);
-      word-break: break-all;
-    }
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.4rem;
-    }
-    .tag {
-      font-size: 0.75rem;
-      padding: 0.1rem 0.55rem;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(8, 12, 24, 0.9);
-      color: var(--muted);
-    }
-    .highlight {
-      color: var(--highlight);
-      font-weight: 500;
-    }
-    .danger {
-      color: var(--danger);
-      font-weight: 500;
-    }
-    .section-muted {
-      font-size: 0.86rem;
-      color: var(--muted);
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 1.2rem;
-      margin-top: 0.8rem;
-    }
-    .service-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-    }
-    .footer {
-      border-top: 1px solid var(--border);
-      margin-top: 2.5rem;
-      padding-top: 1.4rem;
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      gap: 1.5rem;
-      font-size: 0.9rem;
-    }
-    .contact-label {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 0.2rem;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 768px) {
-      .grid, .footer {
-        grid-template-columns: minmax(0, 1fr);
-      }
-      .page {
-        padding-inline: 1.1rem;
-      }
-    }
+    body { margin:0; padding:0; font-family:system-ui, sans-serif; background:#0b0c10; color:#e5e5e5; }
+    header { padding:3rem 2rem; text-align:center; background:#0f1116; border-bottom:1px solid #222; }
+    h1 { margin:0; font-size:2.8rem; }
+    h2 { margin-top:2.5rem; }
+    p { max-width:700px; margin:0.5rem auto; line-height:1.6; }
+    a { color:#61dafb; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); padding:2rem; }
+    .card { background:#11141a; border:1px solid #222; border-radius:8px; padding:1.25rem; }
+    .tag { display:inline-block; padding:0.2rem 0.6rem; border-radius:999px; border:1px solid #444; font-size:0.75rem; margin:0.25rem; }
+    footer { text-align:center; padding:2rem; color:#888; font-size:0.85rem; }
   </style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <div class="badge">CoreCraft Genesis · Genesis‑Artefakte</div>
-      <h1>Firmenprofil &amp; Genesis‑Artefakte</h1>
-      <p class="lead">
-        Wir dokumentieren, verlinken und präsentieren digitale Artefakte, technische Ursprünge und narrative Echos –
-        modular, auditierbar und mythisch verankert in einer konsistenten Genesis‑Architektur.
-      </p>
-    </header>
 
-    <section>
-      <h2>Genesis‑Artefakt: Ikosaeder</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Äther‑Ikosaeder</div>
-            <span class="pill">Genesis‑Artefakt · Symbolik</span>
-          </div>
-          <p class="section-muted">
-            Der Ikosaeder ist ein platonischer Körper mit 20 gleichseitigen Dreiecken – ein Symbol für Äther,
-            Resonanz und geometrische Reinheit. Dieses Artefakt dient als visuelle und symbolische Verankerung
-            des Äther‑Moduls innerhalb der CoreCraft‑Genesis.
-          </p>
-          <ul class="list">
-            <li><span class="key">FLOPS‑Telemetrie</span><span>1500 FLOPS pro Fläche</span></li>
-            <li><span class="key">NFT‑Trigger</span><span>Aktivierung aller 20 Flächen</span></li>
-            <li><span class="key">Lizenz</span><span>Apache&nbsp;2.0 mit Genesis‑Signatur</span></li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Platonischer Körper</span>
-            <span class="tag">Äther‑Symbolik</span>
-            <span class="tag">Genesis‑Artefakt</span>
-            <span class="tag">Audit‑fähig</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Genesis‑Elemente</div>
-            <span class="pill">DNS · Nodes · Manifeste</span>
-          </div>
-          <ul class="list mono">
-            <li><span class="key">Genesis‑Echo</span><span>satoshi.corecraftgenesis.ch</span></li>
-            <li><span class="key">Genesis‑Node</span><span>node.corecraftgenesis.ch</span></li>
-            <li><span class="key">Forschungs‑Chain</span><span>chain2025.corecraftgenesis.ch</span></li>
-            <li><span class="key">DNSSeed‑Echo</span><span>dnsseed.corecraftgenesis.ch</span></li>
-            <li><span class="key">Manifest</span><span>manifest.corecraftgenesis.ch</span></li>
-          </ul>
-          <h3>Snapshot</h3>
-          <p class="mono">dnsseed-scan-2025-10-14.txt</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Leistungen</h2>
-      <p class="section-muted">
-        CoreCraft Genesis verbindet technische Infrastruktur, symbolische Architektur und audit‑taugliche Dokumentation
-        zu einem konsistenten Service‑Ökosystem.
-      </p>
-      <div class="services-grid">
-        <div class="card">
-          <div class="service-title">Webhosting &amp; Infrastruktur</div>
-          <p>
-            Stabile Hosting‑Lösungen, Domain‑Setup und Betriebsführung – Kunden müssen sich nicht um technische
-            Details, DNS oder Deployment‑Pipelines kümmern.
-          </p>
-        </div>
-        <div class="card">
-          <div class="service-title">Individuelle Anwendungen</div>
-          <p>
-            Tools &amp; Dashboards für Chain‑Management, Reporting und Automatisierung – maßgeschneidert statt
-            Standardsoftware, mit klaren Schnittstellen und auditierbaren Workflows.
-          </p>
-        </div>
-        <div class="card">
-          <div class="service-title">Blog &amp; Wissensplattform</div>
-          <p>
-            Fachartikel, Tutorials und Updates – Positionierung als Experte, Aufbau von Vertrauen und
-            langfristiger Dokumentation der Genesis‑Entwicklung.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Kontakt</h2>
-      <div class="footer">
-        <div>
-          <div class="contact-label">Autor &amp; Architekt</div>
-          <p>
-            <span class="highlight">Daniel Aecherli</span> – Genesis‑Architekt, Validator, Mythic Founder<br />
-            Verantwortlich für narrative Tiefe, audit‑sealed Artefakte und symbolische Infrastruktur.
-          </p>
-        </div>
-        <div>
-          <div class="contact-label">Kontakt &amp; Impressum</div>
-          <p>
-            E‑Mail: <a href="mailto:contact@corecraftgenesis.ch">contact@corecraftgenesis.ch</a><br />
-            Adresse: Ottikon bei Kemptthal, Schweiz
-          </p>
-          <p class="section-muted" style="margin-top:0.6rem;">
-            © 2025 CoreCraft Genesis – Alle Rechte vorbehalten.
-          </p>
-        </div>
-      </div>
-    </section>
+<header>
+  <h1>CoreCraft Genesis</h1>
+  <p>Die aktive Technologie‑Domain für EngineCore, Interchain, Runtime und symbolische Architektur.</p>
+  <div>
+    <span class="tag">EngineCore</span>
+    <span class="tag">CoreCraftSystems</span>
+    <span class="tag">Genesis‑Architektur</span>
+    <span class="tag">Symbolische KI</span>
+    <span class="tag">Interchain</span>
+    <span class="tag">Runtime</span>
   </div>
+</header>
+
+<section>
+  <h2 style="text-align:center;">Technologie‑Landschaft</h2>
+  <p style="text-align:center;">
+    CoreCraft Genesis bildet die technische Grundlage für deterministische Ausführung, Interchain‑Kommunikation,
+    symbolische Governance und modulare OEM‑Integration.  
+    Diese Seite ist der zentrale Einstiegspunkt für Entwickler, Partner und Institutionen.
+  </p>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>EngineCore</h3>
+      <p>Der deterministische Kern: A/T/M/P‑Layer, DSP‑Modelle, Time‑ und Memory‑Architektur.</p>
+      <p><a href="/enginecore">EngineCore öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Interchain</h3>
+      <p>Kommunikations‑ und Synchronisationsschicht zwischen Systemen, Protokollen und Welten.</p>
+      <p><a href="/interchain">Interchain öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Runtime</h3>
+      <p>Ausführungsmodelle, Scheduling, deterministische Pipelines, State‑Management.</p>
+      <p><a href="/runtime">Runtime öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Symbolische KI</h3>
+      <p>Governance‑Modelle, symbolische Entscheidungslogik, MetaCore‑Integration.</p>
+      <p><a href="/symbolic-ai">Symbolische KI öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>WireNet / Zenoh</h3>
+      <p>Ultra‑low‑latency Kommunikation, verteilte Datenräume, Edge‑Integration.</p>
+      <p><a href="/wirenet">WireNet öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Chain2025</h3>
+      <p>Moderne, modulare Chain‑Architektur für verteilte Systeme und OEM‑Integrationen.</p>
+      <p><a href="/chain2025">Chain2025 öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Bifröst</h3>
+      <p>Brücken‑Architektur zwischen symbolischen, technischen und institutionellen Welten.</p>
+      <p><a href="/bifrost">Bifröst öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Atlantis</h3>
+      <p>Mythologisch‑technische Meta‑Schicht für narrative Verankerung und Governance.</p>
+      <p><a href="/atlantis">Atlantis öffnen</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Orbital District</h3>
+      <p>Perimeter‑Infrastruktur, Edge‑Zonen, Übergangs‑ und Sicherheitsarchitektur.</p>
+      <p><a href="/orbital">Orbital District öffnen</a></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  CoreCraft Genesis – Technologie‑Index · <span id="ts"></span>
+</footer>
+
+<script>
+  document.getElementById('ts').textContent = new Date().toISOString().slice(0,10);
+</script>
+
 </body>
 </html>
-```
+
