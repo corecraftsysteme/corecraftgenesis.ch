@@ -1,0 +1,120 @@
+<section class="section enginecore-section">
+  <div class="container">
+
+    <!-- Header -->
+    <h1 class="enginecore-title">EngineCore · A‑Layer</h1>
+    <p class="enginecore-subtitle">
+      Der A‑Layer bildet die deterministische Bodenplatte von EngineCore. 
+      Er definiert Architektur, Signalverarbeitung und Ausführungslogik, 
+      auf denen alle weiteren Schichten aufsetzen.
+    </p>
+
+    <!-- Meta -->
+    <div class="enginecore-meta">
+      <span class="meta-label">Rolle im System</span>
+      <span class="meta-value">Technische Fundament‑Schicht · Deterministische Execution‑Basis</span>
+    </div>
+
+    <!-- Divider -->
+    <div class="enginecore-divider"></div>
+
+    <!-- Funktion des A-Layers -->
+    <h2 class="enginecore-section-title">Funktion des A‑Layers</h2>
+    <p class="enginecore-text">
+      Der A‑Layer ist die unterste Schicht der EngineCore‑Architektur. 
+      Er stellt sicher, dass jede Operation deterministisch, reproduzierbar 
+      und audit‑tauglich ausgeführt wird. Alle höheren Schichten 
+      (T‑Layer, M‑Layer, P‑Layer) bauen auf dieser stabilen, klar definierten 
+      Execution‑Basis auf.
+    </p>
+
+    <!-- Grid of Subsections -->
+    <div class="enginecore-grid">
+
+      <!-- A-Architecture -->
+      <div class="enginecore-card">
+        <h3 class="enginecore-card-title">A‑Architecture</h3>
+        <p class="enginecore-card-subtitle">Struktur & Topologie</p>
+        <ul class="enginecore-list">
+          <li>Definiert die Kern‑Topologie des EngineCore</li>
+          <li>Legt deterministische Ausführungsmodelle fest</li>
+          <li>Rahmen für Low‑Level‑Designentscheidungen</li>
+        </ul>
+      </div>
+
+      <!-- A-DSP -->
+      <div class="enginecore-card">
+        <h3 class="enginecore-card-title">A‑DSP</h3>
+        <p class="enginecore-card-subtitle">Signalverarbeitung</p>
+        <ul class="enginecore-list">
+          <li>Signalpfade und Filterketten</li>
+          <li>Transformationen im Echtzeit‑Kontext</li>
+          <li>Deterministische Signal‑ und Datenverarbeitung</li>
+        </ul>
+      </div>
+
+      <!-- A-Execution -->
+      <div class="enginecore-card">
+        <h3 class="enginecore-card-title">A‑Execution</h3>
+        <p class="enginecore-card-subtitle">Ausführungs‑Kernel</p>
+        <ul class="enginecore-list">
+          <li>Scheduling‑Mechanismen und Ablaufsteuerung</li>
+          <li>Deterministische Execution‑Pfade</li>
+          <li>Grundlage für reproduzierbare Prozesse</li>
+        </ul>
+      </div>
+
+      <!-- A-Memory-Access -->
+      <div class="enginecore-card">
+        <h3 class="enginecore-card-title">A‑Memory‑Access</h3>
+        <p class="enginecore-card-subtitle">Speicherzugriff</p>
+        <ul class="enginecore-list">
+          <li>Verwaltung von Speicherzugriff und Layout</li>
+          <li>Cache‑Modelle und Low‑Level‑Optimierung</li>
+          <li>Deterministische Speicherpfade</li>
+        </ul>
+      </div>
+
+      <!-- A-I/O-Core -->
+      <div class="enginecore-card">
+        <h3 class="enginecore-card-title">A‑I/O‑Core</h3>
+        <p class="enginecore-card-subtitle">Schnittstellen</p>
+        <ul class="enginecore-list">
+          <li>Input‑Output‑Routing und Device‑Abstraktion</li>
+          <li>Deterministische I/O‑Schnittstellen</li>
+          <li>Stabile Basis für externe Anbindungen</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- A-Layer als Bodenplatte -->
+    <div class="enginecore-divider"></div>
+
+    <h2 class="enginecore-section-title">A‑Layer als Bodenplatte</h2>
+    <p class="enginecore-text">
+      Der A‑Layer fungiert als Startpunkt für alle EngineCore‑Prozesse 
+      und als Bodenplatte der gesamten Architektur.
+    </p>
+
+    <ul class="enginecore-list">
+      <li><strong>Startpunkt:</strong> Einstieg in alle technischen Abläufe</li>
+      <li><strong>Fundament:</strong> Trägt T‑, M‑ und P‑Layer</li>
+      <li><strong>Index:</strong> Listet alle A‑Unterschichten strukturiert auf</li>
+      <li><strong>Dokumentation:</strong> Geeignet als Deckblatt / Umschlagseite</li>
+    </ul>
+
+    <p class="enginecore-text">
+      Diese Seite kann als HTML‑Landing‑Page, als A4‑Deckblatt oder als 
+      README‑Einstieg für den A‑Layer verwendet werden.
+    </p>
+
+    <!-- Footer -->
+    <div class="enginecore-footer">
+      <span>EngineCore · Layer A · Architektur & Execution‑Foundation</span>
+      <span>CoreCraftGenesis · Deterministische Systemarchitektur</span>
+    </div>
+
+  </div>
+</section>
+
